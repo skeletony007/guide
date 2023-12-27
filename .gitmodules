@@ -1,0 +1,3 @@
+[submodule "visualstudio-code-for-cs50"]
+	path = visualstudio-code-for-cs50
+	url = https://github.com/skeletony007/visualstudio-code-for-cs50.git
