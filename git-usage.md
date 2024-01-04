@@ -107,6 +107,41 @@ git pull
 
 from the submodule directory.
 
+### Archive Git branches
+
+Archive and delete the branch.
+
+**Local**
+
+- Create the tag and delete the branch
+
+  ```
+  git tag archive/<branchname> <branchname>
+  git branch -d <branchname>
+  ```
+- (undo) Restore the branch and delete the tag
+
+  ```
+  git checkout -b <branchname> archive/<branchname>
+  git git tag --delete archive/<branchname>
+  ```
+
+**Remote**
+
+- Push local tags to remote and delete remote branch
+
+  ```
+  git push --tags
+  git push -d origin <branchname>
+  ```
+
+- (undo) Push branch to remote and delete remote tag
+
+  ```
+  git push --set-upstream <branchname>
+  git push --delete origin archive/<branchname>
+  ```
+
 ### Move your unsaved changes to a new branch without committing
 
 1. Stash your changes
