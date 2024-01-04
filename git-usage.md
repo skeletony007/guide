@@ -107,6 +107,29 @@ git pull
 
 from the submodule directory.
 
+### Move your unsaved changes to a new branch without committing
+
+1. Stash your changes
+
+   ```
+   git stash
+   ```
+2. Create a new branch
+
+   ```
+   git checkout -b <new_branch_name>
+   ```
+4. Apply your changes from the stash
+
+   ```
+   git stash apply
+   ```
+5. If you want to remove the changes from the stash, use
+
+   ```
+   git stash drop
+   ```
+
 ### Undo things 📜
 
 > [How to undo (almost) anything with Git](https://github.blog/2015-06-08-how-to-undo-almost-anything-with-git/) (See https://stackoverflow.com/q/15772134)
