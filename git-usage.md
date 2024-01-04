@@ -161,7 +161,7 @@ Archive and delete the branch.
 - Push local tags to remote and delete remote branch
 
   ```
-  git push --tags
+  git push <remote> archive/<branchname>
   git push -d origin <branchname>
   ```
 
