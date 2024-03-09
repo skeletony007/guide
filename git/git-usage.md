@@ -4,7 +4,7 @@
 
 🔑 Key
 | Placeholder | Value                                                      |
-|--           |--                                                          |
+| ---         | ---                                                        |
 | `USERNAME`  | GitHub Login                                               |
 | `REPO`      | The name of the GitHub repository that you want to work on |
 
